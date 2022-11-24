@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import {defineNuxtConfig} from 'nuxt/config'
+
 export default defineNuxtConfig({
     app: {
+        // Global page headers
         head: {
             title: 'Nuxt 3 Components',
             titleTemplate: '%s | Nuxt 3 Components',
@@ -17,6 +20,28 @@ export default defineNuxtConfig({
                 }
             ]
         },
+    },
 
-    }
+    // Global CSS
+    css: [
+        // Bootstrap module
+        'bootstrap/dist/css/bootstrap.min.css',
+        // SCSS file in the project
+        // '~/assets/scss/main.scss'
+    ],
+
+    // Plugins to run before rendering page
+    plugins: [
+        {src: '~/plugins/bootstrap.client.js', mode: 'client'},
+        {src: '~/plugins/sweet-alert2.client.js', mode: 'client'},
+    ],
+
+    // Auto import components
+    components: {
+        global: true,
+        dirs: ['~/components']
+    },
+
+    // Modules
+    modules: []
 })
