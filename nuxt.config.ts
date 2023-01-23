@@ -27,13 +27,12 @@ export default defineNuxtConfig({
         // Bootstrap module
         'bootstrap/dist/css/bootstrap.min.css',
         // SCSS file in the project
-        // '~/assets/scss/main.scss'
+        '~/assets/scss/main.scss'
     ],
 
     // Plugins to run before rendering page
     plugins: [
-        {src: '~/plugins/bootstrap.client.js', mode: 'client'},
-        {src: '~/plugins/sweet-alert2.client.js', mode: 'client'},
+        {src: '~/plugins/bootstrap.client.ts', mode: 'client'},
     ],
 
     // Auto import components
@@ -43,5 +42,7 @@ export default defineNuxtConfig({
     },
 
     // Modules
-    modules: []
+    modules: [
+        '@nuxtjs/color-mode'
+    ]
 })

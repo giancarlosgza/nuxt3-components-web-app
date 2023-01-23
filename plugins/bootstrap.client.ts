@@ -1,7 +1,7 @@
 import {defineNuxtPlugin} from "nuxt/app";
-import bootstrap from 'bootstrap';
+// @ts-ignore
+import bootstrap from 'bootstrap/dist/js/bootstrap.min'
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(bootstrap)
 })
-
