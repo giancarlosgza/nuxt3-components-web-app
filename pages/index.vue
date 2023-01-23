@@ -1,44 +1,96 @@
 <template>
   <div>
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Dashboard</h1>
-          <button class="btn btn-default-outline">Sign up</button>
-
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-               aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
+    <!-- SECTION HEADER -->
+    <section class="section-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="overline">Template Project</p>
+            <h1>Nuxt 3</h1>
           </div>
-
         </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS LIST -->
+    <div class="container mt-3">
+      <div class="row mb-3">
+        <div class="col-md-12 mb-3">
+          <h2>Application UI</h2>
+        </div>
+        <!-- V FOR LIST -->
+        <div v-for="(element, index) in uiElements"
+             :key="`element-${index}`"
+             class="col-md-3 mb-3">
+          <NuxtLink :to="`components/${element.route}`"
+                    class="card card-no-border is-interactive">
+            <div class="card-body">
+              <p class="subtitle-1 mb-0">{{ element.name }}</p>
+            </div>
+          </NuxtLink>
+        </div>
+
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "IndexView"
-}
+<script setup>
+useHead({
+  title: 'Dashboard',
+  meta: [
+    {name: 'description', content: 'Dashboard description'}
+  ]
+})
+
+const uiElements = [
+  {
+    name: 'Badges',
+    route: 'badges'
+  },
+  {
+    name: 'Breadcrumb',
+    route: 'breadcrumb'
+  },
+  {
+    name: 'Buttons',
+    route: 'buttons'
+  },
+  {
+    name: 'Cards',
+    route: 'cards'
+  },
+  {
+    name: 'Dropdowns',
+    route: 'dropdowns'
+  },
+  {
+    name: 'Form control',
+    route: 'form-control'
+  },
+  {
+    name: 'Images',
+    route: 'images'
+  },
+  {
+    name: 'Modals',
+    route: 'modals'
+  },
+  {
+    name: 'Navbars',
+    route: 'navbars'
+  },
+  {
+    name: 'Offcanvas',
+    route: 'offcanvas'
+  },
+  {
+    name: 'Tabs',
+    route: 'tabs'
+  },
+  {
+    name: 'Tables',
+    route: 'tables'
+  }
+]
 </script>

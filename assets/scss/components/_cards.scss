@@ -74,35 +74,6 @@
       border: $card-border solid var(--theme-primary);
     }
 
-    &.is-interactive {
-      cursor: pointer;
-      margin-bottom: $space-1;
-
-      &:hover {
-        background-color: var(--theme-modal);
-        border: $card-border solid var(--theme-on-primary);
-        box-shadow: $shadow-md !important;
-
-        &::after {
-          content: 'Haz doble click para abrir el grupo';
-          color: $white;
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          padding: .5rem;
-          border-radius: $border-radius-0 $border-radius-0 $border-radius-8 $border-radius-8;
-          font-family: map-get($c4-subtitle2, font-family);
-          font-size: map-get($c4-subtitle2, font-size);
-          font-weight: map-get($c4-subtitle2, font-weight);
-          letter-spacing: map-get($c4-subtitle2, letter-spacing);
-          transition: $transition-cubic-bezier;
-          display: flex;
-          justify-content: center;
-          background: linear-gradient(0deg, rgba(var(--theme-primary-rgba), 90%), rgba(var(--theme-primary-rgba), 90%));
-        }
-      }
-    }
-
     &:hover {
       box-shadow: none;
 
@@ -113,6 +84,15 @@
     }
   }
 
+  &.is-interactive {
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--theme-modal);
+      box-shadow: $shadow-md !important;
+      transform: translateY(-.3rem);
+    }
+  }
 }
 
 .floating-card {

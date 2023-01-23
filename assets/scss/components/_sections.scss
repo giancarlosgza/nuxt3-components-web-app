@@ -1,25 +1,10 @@
 .section-hero {
-  padding: $space-2 0;
-  background: var(--theme-c4-gradient);
+  padding: $space-3 0;
+  background: rgba(var(--theme-primary-rgba), 20%);
   background-size: cover;
   border-bottom: 5px solid var(--theme-primary);
-
-  h1, p {
-    color: $white;
-  }
 
   &.sc-sm {
     padding: calc(#{$space-1} * 5) 0 $space-3 0;
   }
-}
-
-.section-search {
-  height: calc(100vh - 64.77px);
-  background-color: var(--theme-background);
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
 }

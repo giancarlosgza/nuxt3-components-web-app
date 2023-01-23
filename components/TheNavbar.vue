@@ -2,27 +2,61 @@
   <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <NuxtLink to="/"
+                  class="navbar-brand">C4 - Nuxt 3
+        </NuxtLink>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <NuxtLink to="/"
-                        class="nav-link active" aria-current="page">Home
+                        class="nav-link active" aria-current="page">
+                Dashboard
               </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/about"
-                        class="nav-link">Features
+              <NuxtLink to="/components"
+                        class="nav-link">
+                Components
               </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/"
-                        class="nav-link">Pricing
+              <NuxtLink to="/templates"
+                        class="nav-link">
+                Templates
               </NuxtLink>
+            </li>
+            <li class="nav-item">
+              <NuxtLink to="/design-system"
+                        class="nav-link">
+                Design System
+              </NuxtLink>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                  Username
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item">Action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item">Another action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item">Something else here</button>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>

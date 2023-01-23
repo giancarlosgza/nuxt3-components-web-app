@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          TheFooter
+          <p class="subtitle-1 fw-bold mb-0">Footer</p>
           <IncludeColorModePicker/>
         </div>
       </div>
