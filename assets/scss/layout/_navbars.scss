@@ -18,6 +18,12 @@
   //}
 
   .navbar-brand {
+    color: var(--theme-on-primary);
+    font-family: map-get($c4-overline, font-family);
+    font-size: map-get($c4-overline, font-size);
+    font-weight: $fw-700;
+    text-transform: uppercase;
+
     img {
       //filter: var(--theme-img-logo-inverse);
       width: 85px;
@@ -25,21 +31,6 @@
       max-width: 100px;
       max-height: 85px;
     }
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    color: var(--theme-on-primary);
-    font-family: $font-inter;
-    font-size: 14px;
-    text-transform: capitalize;
-  }
-
-  &.navbar-light .navbar-brand {
-    color: var(--theme-on-primary);
-    font-family: map-get($c4-overline, font-family);
-    font-size: map-get($c4-overline, font-size);
-    font-weight: 700;
-    text-transform: uppercase;
 
     &:hover {
       color: var(--theme-primary-500);
@@ -49,6 +40,13 @@
     &:active {
       color: var(--theme-primary-600);
     }
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: var(--theme-on-primary);
+    font-family: $font-inter;
+    font-size: 14px;
+    text-transform: capitalize;
   }
 
   .navbar a {
@@ -69,10 +67,17 @@
     filter: var(--theme-img-logo);
   }
 
-  &.navbar-light .navbar-nav .nav-link {
+  .navbar-nav .nav-link {
     color: var(--theme-on-primary);
 
     &.nuxt-link-exact-active {
+      font-weight: 500;
+      color: var(--theme-primary-700);
+      border-radius: $border-radius-0;
+      border-bottom: 3px solid var(--theme-primary-700);
+    }
+
+    &.router-link-active {
       font-weight: 500;
       color: var(--theme-primary-700);
       border-radius: $border-radius-0;

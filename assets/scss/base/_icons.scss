@@ -63,47 +63,47 @@ i.material-icons-outlined {
   }
 
   &.icon-wrap-red {
-    color: $red;
+    color: map-get($theme-colors, color-red);
   }
 
   &.icon-wrap-pink {
-    color: $pink;
+    color: map-get($theme-colors, color-pink);
   }
 
   &.icon-wrap-purple {
-    color: $purple;
+    color: map-get($theme-colors, color-purple);
   }
 
   &.icon-wrap-deep-purple {
-    color: $deep-purple;
+    color: map-get($theme-colors, color-deep-purple);
   }
 
   &.icon-wrap-blue {
-    color: $blue;
+    color: map-get($theme-colors, color-blue);
   }
 
   &.icon-wrap-cyan {
-    color: $cyan;
+    color: map-get($theme-colors, color-cyan);
   }
 
   &.icon-wrap-teal {
-    color: $teal;
+    color: map-get($theme-colors, color-teal);
   }
 
   &.icon-wrap-green {
-    color: $green;
+    color: map-get($theme-colors, color-green);
   }
 
   &.icon-wrap-yellow {
-    color: $yellow;
+    color: map-get($theme-colors, color-yellow);
   }
 
   &.icon-wrap-amber {
-    color: $amber;
+    color: map-get($theme-colors, color-amber);
   }
 
   &.icon-wrap-orange {
-    color: $orange;
+    color: map-get($theme-colors, color-orange);
   }
 }
 

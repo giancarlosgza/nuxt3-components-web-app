@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- SECTION HEADER -->
-    <section class="section-hero">
+    <section class="section section-hero">
       <div class="container">
         <div class="row">
           <div class="col-md-12">

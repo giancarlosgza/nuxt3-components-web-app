@@ -1,5 +1,5 @@
 // LIGHT MODE VARIABLES
-$primary: #467dfe;
+$primary: #121212;
 $secondary: #f9ff01;
 $accent: #c7e7fe;
 
@@ -131,17 +131,26 @@ $warning: #ffab00;
 $info: #0000be;
 $danger: #de2839;
 
-$red: #ff1744;
-$pink: #f50057;
-$purple: #d500f9;
-$deep-purple: #651fff;
-$blue: #2979ff;
-$cyan: #00e5ff;
-$teal: #1de9b6;
-$green: #00e676;
-$yellow: #ffea00;
-$amber: #ffc400;
-$orange: #ff3d00;
+$theme-colors: (
+        'color-white': #ffffff,
+        'color-black': #000000,
+        'color-default': #f5f8fa,
+        'color-success': #00c853,
+        'color-warning': #ffab00,
+        'color-info': #0000be,
+        'color-danger': #de2839,
+        'color-red': #ff1744,
+        'color-pink': #f50057,
+        'color-purple': #d500f9,
+        'color-deep-purple': #651fff,
+        'color-blue': #2979ff,
+        'color-cyan': #00e5ff,
+        'color-teal': #1de9b6,
+        'color-green': #00e676,
+        'color-yellow': #ffea00,
+        'color-amber': #ffc400,
+        'color-orange': #ff3d00,
+);
 
 // Fonts
 $font-inter: 'Plus Jakarta Sans', 'Roboto', -apple-system, 'Segoe UI', sans-serif;

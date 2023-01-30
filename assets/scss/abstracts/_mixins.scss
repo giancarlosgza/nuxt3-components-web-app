@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-@mixin btn-hover() {
+@mixin btn-states() {
   &:hover {
     box-shadow: v.$shadow-md;
   }
@@ -43,6 +43,7 @@
   &:focus,
   &:active {
     box-shadow: v.$shadow-lg !important;
+    @extend .ripple
   }
 }
 
