@@ -13,7 +13,7 @@
   }
 
   .dropdown-item {
-    font-family: $font-inter;
+    font-family: $font-jakarta-sans;
     font-weight: 400;
     font-size: 14px;
     color: var(--theme-muted) !important;
@@ -52,7 +52,7 @@
   li {
     label {
       letter-spacing: 0.15px;
-      font-family: $font-inter;
+      font-family: $font-jakarta-sans;
     }
   }
 }

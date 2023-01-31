@@ -3,7 +3,7 @@
   color: var(--theme-on-primary);
   border: $form-border solid var(--theme-field-surface-outline);
   border-radius: $c4-forms-border-radius;
-  font-family: $font-inter;
+  font-family: $font-jakarta-sans;
   font-size: 14px;
 
   &:hover {
@@ -316,7 +316,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 1px solid var(--theme-modal);
   border-radius: $border-radius-8;
   box-shadow: $shadow-lg;
-  font-family: $font-inter;
+  font-family: $font-jakarta-sans;
   padding: $space-1;
 
   .dp__arrow_top {
@@ -333,7 +333,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .dp__overlay {
       background: var(--theme-modal);
       color: var(--theme-on-primary);
-      font-family: $font-inter;
+      font-family: $font-jakarta-sans;
       font-weight: 500;
 
       .dp__overlay_container {
@@ -350,7 +350,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .dp__calendar_wrap {
-      font-family: $font-inter;
+      font-family: $font-jakarta-sans;
 
       .db__calendar_header {
         color: var(--theme-on-primary);
@@ -365,7 +365,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         .dp__calendar_row {
           .dp__calendar_item {
             color: var(--theme-on-primary);
-            font-family: $font-roboto;
+            font-family: $font-dm-sans;
 
             .dp__today {
               border: 1px solid transparent;

@@ -44,7 +44,7 @@
 
   .navbar-nav .nav-item .nav-link {
     color: var(--theme-on-primary);
-    font-family: $font-inter;
+    font-family: $font-jakarta-sans;
     font-size: 14px;
     text-transform: capitalize;
   }
@@ -166,7 +166,7 @@
       padding: math.div($space-1, 3);
       min-width: calc(#{$space-3} * 5);
       width: calc(#{$space-3} * 5);
-      font-family: $font-inter;
+      font-family: $font-jakarta-sans;
       transition: $transition-cubic-bezier;
 
       p {

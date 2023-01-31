@@ -18,7 +18,7 @@
     background-color: var(--theme-modal);
     border-radius: $border-radius-4;
     box-shadow: $shadow-lg;
-    font-family: $font-inter;
+    font-family: $font-jakarta-sans;
 
     .mapboxgl-popup-close-button {
       color: var(--theme-on-primary);
@@ -87,7 +87,7 @@
     li {
       a {
         color: var(--theme-muted) !important;
-        font-family: $font-inter;
+        font-family: $font-jakarta-sans;
 
         &:hover {
           background-color: var(--theme-modal) !important;
