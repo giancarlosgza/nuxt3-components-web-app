@@ -69,6 +69,7 @@
 
   .navbar-nav .nav-link {
     color: var(--theme-on-primary);
+    border-bottom: 3px solid transparent;
 
     &.nuxt-link-exact-active {
       font-weight: 500;

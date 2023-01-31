@@ -5,8 +5,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="overline">Template Project</p>
-            <h1>Nuxt 3</h1>
+            <p class="overline">Nuxt 3 - C4</p>
+            <h1>C4 - MTY</h1>
           </div>
         </div>
       </div>
@@ -16,7 +16,7 @@
     <div class="container mt-3">
       <div class="row mb-3">
         <div class="col-md-12 mb-3">
-          <h2>Application UI</h2>
+          <h2>Components</h2>
         </div>
         <!-- V FOR LIST -->
         <div v-for="(element, index) in uiElements"
@@ -32,6 +32,7 @@
 
       </div>
     </div>
+
   </div>
 </template>
 
