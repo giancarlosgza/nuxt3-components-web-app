@@ -126,10 +126,24 @@ $grey: #757575;
 $dark: #212121;
 
 $default: #f5f8fa;
+$muted: #52595f;
 $success: #00c853;
 $warning: #ffab00;
 $info: #0000be;
 $danger: #de2839;
+
+$primary-colors: (
+        'primary-rgba': $primary,
+        'secondary-rgba': $secondary,
+        'accent-rgba': $accent,
+        'overlay-rgba': $black,
+        'success-rgba': $success,
+        'info-rgba': $info,
+        'warning-rgba': $warning,
+        'danger-rgba': $danger,
+        'default-rgba': $default,
+        'muted-rgba': $muted,
+);
 
 $theme-colors: (
         'color-white': #ffffff,

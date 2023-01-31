@@ -4,19 +4,9 @@
   --theme-on-primary: #000000;
   --theme-on-primary-inverse: #ffffff;
   // RGBA colors
-  --theme-primary-rgba: 70, 125, 254;
-  --theme-secondary-rgba: 249, 255, 1;
-  --theme-accent-rgba: 199, 231, 254;
-  --theme-overlay-rgba: 0, 0, 0;
-  --theme-success-rgba: 0, 136, 56;
-  --theme-info-rgba: 8, 70, 160;
-  --theme-warning-rgba: 255, 171, 0;
-  --theme-danger-rgba: 222, 40, 57;
-  --theme-default-rgba: 123, 123, 123;
-  --theme-muted-rgba: 82, 89, 95;
-  // Gradient
-  --theme-c4-gradient: linear-gradient(345deg, #7b7b7b, #555555, #434343);
-  --theme-c4-gradient-orange: linear-gradient(345deg, #b17001, #e49001, #fda001);
+  @each $color, $value in $primary-colors {
+    --#{$variable-prefix}#{$color}: #{hexToRGB($value)};
+  }
   // Variants colors
   --theme-muted: #52595f;
   --theme-muted-100: #52595f;
@@ -65,7 +55,6 @@
   @each $color, $value in $accents {
     --#{$variable-prefix}#{$color}: #{$value};
   }
-
 }
 
 .dark-mode {
