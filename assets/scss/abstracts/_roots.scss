@@ -1,6 +1,6 @@
 :root {
-  // Primary colors
-  --theme-background: #f5f5f5;
+  // Base colors
+  --theme-background: var(--theme-surface-500);
   --theme-on-primary: #000000;
   --theme-on-primary-inverse: #ffffff;
   // RGBA colors
@@ -25,8 +25,8 @@
   --theme-item-range: #f8f8fa;
   --theme-table-hover: #00000003;
   // Image filters
-  --theme-img-logo: none;
-  --theme-img-logo-inverse: brightness(0) invert(1);
+  --theme-img-filter: none;
+  --theme-img-filter-inverse: brightness(0) invert(1);
   --checkbox-selector: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg>');
   --switch-selector: url('data:image/svg+xml;base64,PCEtLSBSZXBsYWNlIHRoZSBjb250ZW50cyBvZiB0aGlzIGVkaXRvciB3aXRoIHlvdXIgU1ZHIGNvZGUgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwgMCwgMCwgMSk7dHJhbnNmb3JtOiA7bXNGaWx0ZXI6OyI+PHBhdGggZD0iTTEyIDJDNi40ODYgMiAyIDYuNDg2IDIgMTJzNC40ODYgMTAgMTAgMTAgMTAtNC40ODYgMTAtMTBTMTcuNTE0IDIgMTIgMnoiPjwvcGF0aD48L3N2Zz4=');
   --frosted-glass-bg: rgba(255, 255, 255, 0.50);
@@ -52,8 +52,8 @@
 }
 
 .dark-mode {
-  // Primary colors
-  --theme-background: #101010;
+  // Base colors
+  --theme-background: var(--theme-surface-500);
   --theme-on-primary: #ffffff;
   --theme-on-primary-inverse: #000000;
   // Variants colors
@@ -74,8 +74,8 @@
   --theme-item-range: #474748;
   --theme-table-hover: #ffffff0f;
   // Image filters
-  --theme-img-logo: brightness(0) invert(1);
-  --theme-img-logo-inverse: none;
+  --theme-img-filter: brightness(0) invert(1);
+  --theme-img-filter-inverse: none;
   --checkbox-selector: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(0,0,0,1)"/></svg>');
   --switch-selector: url('data:image/svg+xml;base64,PCEtLSBSZXBsYWNlIHRoZSBjb250ZW50cyBvZiB0aGlzIGVkaXRvciB3aXRoIHlvdXIgU1ZHIGNvZGUgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMSk7dHJhbnNmb3JtOiA7bXNGaWx0ZXI6OyI+PHBhdGggZD0iTTEyIDJDNi40ODYgMiAyIDYuNDg2IDIgMTJzNC40ODYgMTAgMTAgMTAgMTAtNC40ODYgMTAtMTBTMTcuNTE0IDIgMTIgMnoiPjwvcGF0aD48L3N2Zz4=');
   --frosted-glass-bg: rgba(0, 0, 0, 0.50);

@@ -289,23 +289,23 @@
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator {
-  filter: var(--theme-img-logo);
+  filter: var(--theme-img-filter);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: var(--theme-img-logo);
+  filter: var(--theme-img-filter);
 }
 
 // DATE PICKER
 .dp__input {
-  background-color: var(--theme-background);
+  background-color: var(--theme-surface-500);
   color: var(--theme-on-primary);
   border: $form-border solid var(--theme-surface-outline);
   border-radius: $border-radius-4;
   font-size: 14px;
 
   &:hover {
-    background-color: var(--theme-background);
+    background-color: var(--theme-surface-500);
     color: var(--theme-on-primary);
     border: $form-border solid var(--theme-primary-500);
   }
@@ -402,21 +402,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 // VUE SELECT CUSTOM STYLES
 .vs__selected {
-  background-color: var(--theme-background) !important;
-  border: 1px solid var(--theme-background) !important;
+  background-color: var(--theme-surface-500) !important;
+  border: 1px solid var(--theme-surface-500) !important;
   border-radius: $border-radius-4 !important;
   color: var(--theme-on-primary) !important;
 
   .vs__deselect svg {
-    filter: var(--theme-img-logo);
+    filter: var(--theme-img-filter);
   }
 }
 
 .vs__dropdown-menu {
-  background-color: var(--theme-background) !important;
+  background-color: var(--theme-surface-500) !important;
   color: var(--theme-on-primary) !important;
   border-radius: $border-radius-8 !important;
-  border: 1px solid var(--theme-background) !important;
+  border: 1px solid var(--theme-surface-500) !important;
   box-shadow: $shadow-md !important;
 }
 
@@ -429,7 +429,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .vs__dropdown-toggle {
-  background-color: var(--theme-background) !important;
+  background-color: var(--theme-surface-500) !important;
   color: var(--theme-on-primary) !important;
   border: 1px solid var(--theme-surface-outline) !important;
   height: auto;
@@ -450,7 +450,7 @@ $vs-state-active-color: var(--theme-on-primary-inverse) !important;
 
 .vue-select {
   width: 100%;
-  background-color: var(--theme-background);
+  background-color: var(--theme-surface-500);
   color: var(--theme-on-primary);
   border: $form-border solid var(--theme-surface-outline);
   border-radius: $border-radius-4;

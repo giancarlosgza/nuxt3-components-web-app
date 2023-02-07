@@ -182,7 +182,7 @@
       border-bottom: 2px solid var(--theme-surface-outline) !important;
 
       &.nuxt-link-exact-active {
-        background-color: var(--theme-background);
+        background-color: var(--theme-surface-500);
         color: var(--theme-primary-800);
         box-shadow: $shadow-sm;
         border-radius: $border-radius-0;
@@ -234,7 +234,7 @@
 }
 
 .btn-close {
-  filter: var(--theme-img-logo);
+  filter: var(--theme-img-filter);
 }
 
 .btn-group {
