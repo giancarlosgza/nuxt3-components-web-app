@@ -43,7 +43,7 @@ table {
     tbody {
       tr {
         &:nth-of-type(odd) {
-          background-color: var(--theme-surface);
+          background-color: var(--theme-surface-100);
 
           td {
             color: var(--theme-on-primary);

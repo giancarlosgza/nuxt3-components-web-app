@@ -66,7 +66,7 @@ const uiElements = [
   },
   {
     name: 'Form control',
-    route: 'form-control'
+    route: 'forms'
   },
   {
     name: 'Images',

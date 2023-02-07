@@ -58,6 +58,26 @@ $accents: (
         "accent-900": $accent-900
 ) !default;
 
+// LIGHT MODE SURFACE VARIABLES
+$light-surface: #ffffff;
+
+// SURFACE THEME GENERATOR
+$light-surface-100: $light-surface !default;
+$light-surface-200: $light-surface !default;
+$light-surface-300: $light-surface !default;
+$light-surface-400: $light-surface !default;
+$light-surface-500: scale-color($light-surface, $lightness: -4%) !default;
+$light-surface-outline: scale-color($light-surface, $lightness: -15%) !default;
+
+$light-surfaces: (
+        "surface-100": $light-surface-100,
+        "surface-200": $light-surface-200,
+        "surface-300": $light-surface-300,
+        "surface-400": $light-surface-400,
+        "surface-500": $light-surface-500,
+        "surface-outline": $light-surface-outline,
+) !default;
+
 // DARK MODE PRIMARIES VARIABLES
 $dark-primary: #f5f5f5;
 $dark-secondary: #ffc627;
@@ -127,6 +147,7 @@ $dark-surface-200: scale-color($dark-surface, $lightness: 15%) !default;
 $dark-surface-300: scale-color($dark-surface, $lightness: 10%) !default;
 $dark-surface-400: scale-color($dark-surface, $lightness: 5%) !default;
 $dark-surface-500: $dark-surface !default;
+$dark-surface-outline: scale-color($dark-surface, $lightness: 15%) !default;
 
 $dark-surfaces: (
         "surface-100": $dark-surface-100,
@@ -134,6 +155,7 @@ $dark-surfaces: (
         "surface-300": $dark-surface-300,
         "surface-400": $dark-surface-400,
         "surface-500": $dark-surface-500,
+        "surface-outline": $dark-surface-outline,
 ) !default;
 
 // CSS VARIABLES PREFIX

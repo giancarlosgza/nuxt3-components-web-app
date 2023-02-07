@@ -10,7 +10,7 @@
   margin: auto;
   z-index: 99;
   width: 80%;
-  background-color: var(--theme-modal);
+  background-color: var(--theme-surface-200);
   box-shadow: $shadow-lg;
   border-radius: $border-radius-8;
   transition: $transition-cubic-bezier;
@@ -73,7 +73,7 @@
 // BS TOOLTIPS
 .tooltip {
   .tooltip-inner {
-    background: var(--theme-modal);
+    background: var(--theme-surface-200);
     color: var(--theme-on-primary);
     box-shadow: $shadow-lg;
     font-family: map-get($c4-subtitle1, font-family);
@@ -83,7 +83,7 @@
 
   .tooltip-arrow {
     &::before {
-      border-top-color: var(--theme-modal);
+      border-top-color: var(--theme-surface-200);
     }
   }
 }
@@ -92,7 +92,7 @@
   .tooltip-arrow {
 
     &::before {
-      border-left-color: var(--theme-modal);
+      border-left-color: var(--theme-surface-200);
     }
   }
 }
@@ -101,7 +101,7 @@
   .tooltip-arrow {
 
     &::before {
-      border-right-color: var(--theme-modal);
+      border-right-color: var(--theme-surface-200);
     }
   }
 }
@@ -110,7 +110,7 @@
   .tooltip-arrow {
 
     &::before {
-      border-top-color: var(--theme-modal);
+      border-top-color: var(--theme-surface-200);
     }
   }
 }
@@ -119,7 +119,7 @@
   .tooltip-arrow {
 
     &::before {
-      border-bottom-color: var(--theme-modal);
+      border-bottom-color: var(--theme-surface-200);
     }
   }
 }

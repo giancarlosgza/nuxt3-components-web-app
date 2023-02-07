@@ -15,7 +15,7 @@
   z-index: 99;
 
   .mapboxgl-popup-content {
-    background-color: var(--theme-modal);
+    background-color: var(--theme-surface-100);
     border-radius: $border-radius-4;
     box-shadow: $shadow-lg;
     font-family: $font-jakarta-sans;
@@ -32,25 +32,25 @@
 
   &.mapboxgl-popup-anchor-top {
     .mapboxgl-popup-tip {
-      border-bottom-color: var(--theme-modal) !important;
+      border-bottom-color: var(--theme-surface-100) !important;
     }
   }
 
   &.mapboxgl-popup-anchor-bottom {
     .mapboxgl-popup-tip {
-      border-top-color: var(--theme-modal) !important;
+      border-top-color: var(--theme-surface-100) !important;
     }
   }
 
   &.mapboxgl-popup-anchor-left {
     .mapboxgl-popup-tip {
-      border-right-color: var(--theme-modal) !important;
+      border-right-color: var(--theme-surface-100) !important;
     }
   }
 
   &.mapboxgl-popup-anchor-right {
     .mapboxgl-popup-tip {
-      border-left-color: var(--theme-modal) !important;
+      border-left-color: var(--theme-surface-100) !important;
     }
   }
 
@@ -58,10 +58,10 @@
 
 .mapboxgl-ctrl-geocoder {
   border-radius: $border-radius-8 !important;
-  background-color: var(--theme-navbar) !important;
+  background-color: var(--theme-surface-500) !important;
 
   .mapboxgl-ctrl-geocoder--input {
-    background-color: var(--theme-navbar) !important;
+    background-color: var(--theme-surface-500) !important;
     color: var(--theme-muted) !important;
     border-radius: $border-radius-8 !important;
     box-shadow: $shadow-lg;
@@ -72,13 +72,13 @@
   }
 
   .suggestions {
-    background-color: var(--theme-navbar) !important;
+    background-color: var(--theme-surface-500) !important;
     color: var(--theme-on-primary) !important;
 
     li {
       &.active {
         a {
-          background-color: var(--theme-modal) !important;
+          background-color: var(--theme-surface-100) !important;
           color: var(--theme-on-primary) !important;
         }
       }
@@ -90,7 +90,7 @@
         font-family: $font-jakarta-sans;
 
         &:hover {
-          background-color: var(--theme-modal) !important;
+          background-color: var(--theme-surface-100) !important;
           color: var(--theme-muted) !important;
         }
       }
@@ -105,7 +105,7 @@
 .mapboxgl-map {
   .mapboxgl-ctrl {
     &.mapboxgl-ctrl-group {
-      background-color: var(--theme-navbar);
+      background-color: var(--theme-surface-500);
 
       button {
         span {

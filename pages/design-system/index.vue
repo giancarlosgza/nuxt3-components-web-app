@@ -29,8 +29,8 @@
             <div class="card-body bg-transparent">
               <p class="subtitle-1 fw-bold mb-3">--theme-surface-100</p>
               <p class="subtitle-1 mb-1">- Modal</p>
-              <p class="subtitle-1 mb-1">- Sidebar</p>
               <p class="subtitle-1 mb-1">- Sheets</p>
+              <p class="subtitle-1 mb-1">- Sidebar</p>
             </div>
           </div>
         </div>
@@ -40,6 +40,7 @@
               <p class="subtitle-1 fw-bold mb-3">--theme-surface-200</p>
               <p class="subtitle-1 mb-1">- Datepicker</p>
               <p class="subtitle-1 mb-1">- Dropdown</p>
+              <p class="subtitle-1 mb-1">- Tooltips</p>
               <p class="subtitle-1 mb-1">- Popups</p>
             </div>
           </div>
@@ -51,6 +52,7 @@
               <p class="subtitle-1 mb-1">- Card</p>
               <p class="subtitle-1 mb-1">- Lists</p>
               <p class="subtitle-1 mb-1">- Pagination</p>
+              <p class="subtitle-1 mb-1">- Placeholder</p>
             </div>
           </div>
         </div>
@@ -58,7 +60,9 @@
           <div class="card card-outline" style="background: var(--theme-surface-400)">
             <div class="card-body bg-transparent">
               <p class="subtitle-1 fw-bold mb-3">--theme-surface-400</p>
+              <p class="subtitle-1 mb-1">- Badge</p>
               <p class="subtitle-1 mb-1">- Button</p>
+              <p class="subtitle-1 mb-1">- Footer</p>
               <p class="subtitle-1 mb-1">- Pagination</p>
               <p class="subtitle-1 mb-1">- Tabs</p>
             </div>
@@ -69,8 +73,8 @@
             <div class="card-body bg-transparent">
               <p class="subtitle-1 fw-bold mb-3">--theme-surface-500</p>
               <p class="subtitle-1 mb-1">- Body</p>
-              <p class="subtitle-1 mb-1">- Navbar</p>
               <p class="subtitle-1 mb-1">- Form control</p>
+              <p class="subtitle-1 mb-1">- Navbar</p>
             </div>
           </div>
         </div>

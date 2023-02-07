@@ -1,7 +1,7 @@
 @use "sass:math";
 
 .navbar {
-  background-color: var(--theme-navbar) !important;
+  background-color: var(--theme-surface-500) !important;
   font-weight: 500;
   font-size: 14px;
   transition: $transition-cubic-bezier;
@@ -109,7 +109,7 @@
   right: 0;
   padding: math.div($space-1, 2);
   z-index: 999;
-  background-color: var(--theme-modal);
+  background-color: var(--theme-surface-100);
   color: var(--theme-on-primary);
   box-shadow: $shadow-lg;
   border-radius: $border-radius-8;

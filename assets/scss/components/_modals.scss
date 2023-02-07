@@ -24,7 +24,7 @@ $modal-fade-transform: scale(.8);
   }
 
   .modal-header {
-    background: var(--theme-modal);
+    background: var(--theme-surface-100);
     border-bottom: 1px solid var(--theme-surface-outline);
     border-top-left-radius: $border-radius-12;
     border-top-right-radius: $border-radius-12;
@@ -37,15 +37,15 @@ $modal-fade-transform: scale(.8);
   }
 
   .modal-content {
-    background-color: var(--theme-modal);
+    background-color: var(--theme-surface-100);
     border-radius: $border-radius-12;
     box-shadow: $shadow-xl;
-    border: var(--theme-surface);
+    border: var(--theme-surface-outline);
   }
 
   .modal-body {
     text-align: left;
-    background: var(--theme-modal);
+    background: var(--theme-surface-100);
 
     .form-control {
       height: 2.5rem;
@@ -55,7 +55,7 @@ $modal-fade-transform: scale(.8);
   }
 
   .modal-footer {
-    background: var(--theme-modal);
+    background: var(--theme-surface-100);
     border-top: 1px solid var(--theme-surface-outline) !important;
     border-bottom-left-radius: $border-radius-12;
     border-bottom-right-radius: $border-radius-12;
@@ -67,7 +67,7 @@ $modal-fade-transform: scale(.8);
 }
 
 .offcanvas {
-  background-color: var(--theme-modal);
+  background-color: var(--theme-surface-100);
 
   .offcanvas-body {
     text-align: left;
@@ -83,7 +83,7 @@ $modal-fade-transform: scale(.8);
   }
 }
 
-$swal2-background: var(--theme-modal) !important;
+$swal2-background: var(--theme-surface-100) !important;
 $swal2-title-color: var(--theme-on-primary) !important;
 $swal2-color: var(--theme-muted) !important;
 $swal2-content-color: var(--theme-on-primary) !important;

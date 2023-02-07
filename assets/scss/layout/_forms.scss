@@ -1,19 +1,19 @@
 .form-control {
-  background-color: var(--theme-surface-1dp);
+  background-color: var(--theme-surface-500);
   color: var(--theme-on-primary);
-  border: $form-border solid var(--theme-field-surface-outline);
+  border: $form-border solid var(--theme-surface-outline);
   border-radius: $c4-forms-border-radius;
   font-family: $font-jakarta-sans;
   font-size: 14px;
 
   &:hover {
-    background-color: var(--theme-surface-1dp);
+    background-color: var(--theme-surface-400);
     color: var(--theme-on-primary);
     border: $form-border solid var(--theme-primary-600);
   }
 
   &:focus {
-    background-color: var(--theme-surface-1dp);
+    background-color: var(--theme-surface-400);
     color: var(--theme-on-primary);
     border: $form-border solid var(--theme-primary-700);
     outline: 0;
@@ -67,7 +67,7 @@
 
 .input-group {
   .input-group-text {
-    background-color: var(--theme-background);
+    background-color: var(--theme-surface-500);
     color: var(--theme-muted);
     border: $form-border solid var(--theme-surface-outline);
     border-right: 1px solid transparent;
@@ -118,25 +118,25 @@
     box-shadow: $shadow-sm;
 
     .input-search-icon {
-      background-color: var(--theme-modal);
+      background-color: var(--theme-surface-100);
     }
 
     .form-search {
-      background-color: var(--theme-modal);
+      background-color: var(--theme-surface-100);
       border: 1px solid var(--theme-surface-outline);
     }
   }
 
   &:focus, &:active {
     .input-search-icon {
-      background-color: var(--theme-modal);
-      border: 1px solid var(--theme-modal);
+      background-color: var(--theme-surface-100);
+      border: 1px solid var(--theme-surface-100);
     }
 
     .form-control {
       &.form-search {
-        background-color: var(--theme-modal);
-        border: 1px solid var(--theme-modal) !important;
+        background-color: var(--theme-surface-100);
+        border: 1px solid var(--theme-surface-100) !important;
       }
     }
   }
@@ -154,7 +154,7 @@
     padding: .5rem 0;
     //bottom: -2rem;
     z-index: 90;
-    background-color: var(--theme-modal);
+    background-color: var(--theme-surface-100);
     box-shadow: $shadow-md;
     border-bottom-right-radius: $border-radius-25;
     border-bottom-left-radius: $border-radius-25;
@@ -179,7 +179,7 @@
 
 /* CUSTOM INPUT FILE */
 .input-file-dropbox {
-  border: 2px dashed var(--theme-field-surface-outline);
+  border: 2px dashed var(--theme-surface-outline);
   background: transparent;
   color: var(--theme-on-primary) !important;
   padding: 5px 0;
@@ -269,7 +269,7 @@
     height: 1.5rem;
   }
 
-  background-color: var(--theme-sidebar);
+  background-color: var(--theme-surface-100);
   border-color: var(--theme-muted);
 
   &:checked {
@@ -312,15 +312,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .dp__menu {
-  background: var(--theme-modal);
-  border: 1px solid var(--theme-modal);
+  background: var(--theme-surface-100);
+  border: 1px solid var(--theme-surface-100);
   border-radius: $border-radius-8;
   box-shadow: $shadow-lg;
   font-family: $font-jakarta-sans;
   padding: $space-1;
 
   .dp__arrow_top {
-    background: var(--theme-modal);
+    background: var(--theme-surface-100);
     left: 30%;
   }
 
@@ -331,14 +331,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .dp__overlay {
-      background: var(--theme-modal);
+      background: var(--theme-surface-100);
       color: var(--theme-on-primary);
       font-family: $font-jakarta-sans;
       font-weight: 500;
 
       .dp__overlay_container {
         .dp__button {
-          background: var(--theme-modal);
+          background: var(--theme-surface-100);
           color: var(--theme-muted);
         }
       }
@@ -358,7 +358,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       }
 
       .dp__calendar_header_separator {
-        background: var(--theme-modal);
+        background: var(--theme-surface-100);
       }
 
       .dp__calendar {
@@ -456,8 +456,8 @@ $vs-state-active-color: var(--theme-on-primary-inverse) !important;
   border-radius: $border-radius-4;
 
   .vue-dropdown {
-    background-color: var(--theme-modal);
-    border: 1px solid var(--theme-modal);
+    background-color: var(--theme-surface-100);
+    border: 1px solid var(--theme-surface-100);
     box-shadow: $shadow-md;
     border-radius: $border-radius-4;
 

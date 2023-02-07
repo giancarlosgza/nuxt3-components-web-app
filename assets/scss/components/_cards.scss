@@ -1,7 +1,7 @@
 @use "sass:math";
 
 .card {
-  background-color: var(--theme-surface-1dp);
+  background-color: var(--theme-surface-300);
   color: var(--theme-on-primary);
   border-radius: $c4-cards-border-radius;
   border: none;
@@ -15,12 +15,12 @@
   }
 
   .card-header {
-    background-color: var(--theme-surface-1dp);
+    background-color: transparent;
     border-bottom: 1px solid transparent;
     margin-top: .5rem;
 
     &:is(.border-bottom) {
-      border-bottom: 1px solid var(--theme-field-surface-outline) !important;
+      border-bottom: 1px solid var(--theme-surface-outline) !important;
     }
 
     &:first-child {
@@ -39,7 +39,7 @@
 
   .card-footer {
     padding: .75rem 1.25rem;
-    background-color: var(--theme-surface-1dp);
+    background-color: var(--theme-surface-300);
     border-top: 1px solid rgba(0, 0, 0, .125);
     border-bottom-left-radius: $c4-cards-border-radius;
     border-bottom-right-radius: $c4-cards-border-radius;
@@ -96,7 +96,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: var(--theme-modal);
+      background-color: var(--theme-surface-100);
       box-shadow: $shadow-md !important;
       transform: translateY(-.3rem);
     }
@@ -145,7 +145,7 @@
   border-radius: $border-radius-12;
   transition: $transition-cubic-bezier;
   box-shadow: $shadow-lg;
-  background: var(--theme-modal);
+  background: var(--theme-surface-200);
   overflow-y: auto;
 
   animation-name: fadeIn;
@@ -277,7 +277,7 @@
 
     .floating-card-aside {
       position: absolute;
-      background-color: var(--theme-modal);
+      background-color: var(--theme-surface-100);
       left: -7rem;
       bottom: -.8rem;
       height: calc(100vh - 50vh + 1px);
@@ -289,7 +289,7 @@
       overflow-y: auto;
 
       .chat-bubble-wrapper {
-        background-color: var(--theme-modal);
+        background-color: var(--theme-surface-100);
         border-radius: $border-radius-6;
         border: 1px solid var(--theme-surface-outline);
         //box-shadow: $shadow-sm;

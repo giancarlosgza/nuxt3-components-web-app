@@ -73,7 +73,7 @@ hr {
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--theme-surface-1dp) var(--theme-surface-outline);
+  scrollbar-color: var(--theme-surface-200) var(--theme-surface-outline);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -83,7 +83,7 @@ hr {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--theme-surface-1dp);
+  background: var(--theme-surface-200);
 }
 
 *::-webkit-scrollbar-thumb {
