@@ -97,6 +97,10 @@
   --frosted-glass-bg: rgba(0, 0, 0, 0.50);
   --frosted-glass-backdrop-filter: blur(20px) saturate(150%) contrast(100%) brightness(100%);
 
+  @each $color, $value in $dark-surfaces {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+
   @each $color, $value in $dark-primaries {
     --#{$variable-prefix}#{$color}: #{$value};
   }

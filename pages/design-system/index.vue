@@ -1,5 +1,82 @@
 <template>
   <div>
+    <!-- HEADER -->
+    <div class="container mt-3">
+      <div class="row mb-3">
+        <div class="col-md-12 mb-3">
+          <div class="card header-hero header-buttons">
+            <div class="card-body">
+              <p class="overline">Design System</p>
+              <h1>Dark theme surfaces</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container mt-3">
+      <div class="row mb-3">
+        <div class="col-md-12 mb-3">
+          <p class="overline mb-2">Dark theme</p>
+          <h2>Surfaces</h2>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+          <div class="card card-outline" style="background: var(--theme-surface-100)">
+            <div class="card-body bg-transparent">
+              <p class="subtitle-1 fw-bold mb-3">--theme-surface-100</p>
+              <p class="subtitle-1 mb-1">- Modal</p>
+              <p class="subtitle-1 mb-1">- Sidebar</p>
+              <p class="subtitle-1 mb-1">- Sheets</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card card-outline" style="background: var(--theme-surface-200)">
+            <div class="card-body bg-transparent">
+              <p class="subtitle-1 fw-bold mb-3">--theme-surface-200</p>
+              <p class="subtitle-1 mb-1">- Datepicker</p>
+              <p class="subtitle-1 mb-1">- Dropdown</p>
+              <p class="subtitle-1 mb-1">- Popups</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card card-outline" style="background: var(--theme-surface-300)">
+            <div class="card-body bg-transparent">
+              <p class="subtitle-1 fw-bold mb-3">--theme-surface-300</p>
+              <p class="subtitle-1 mb-1">- Card</p>
+              <p class="subtitle-1 mb-1">- Lists</p>
+              <p class="subtitle-1 mb-1">- Pagination</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card card-outline" style="background: var(--theme-surface-400)">
+            <div class="card-body bg-transparent">
+              <p class="subtitle-1 fw-bold mb-3">--theme-surface-400</p>
+              <p class="subtitle-1 mb-1">- Button</p>
+              <p class="subtitle-1 mb-1">- Pagination</p>
+              <p class="subtitle-1 mb-1">- Tabs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card card-outline" style="background: var(--theme-surface-500)">
+            <div class="card-body bg-transparent">
+              <p class="subtitle-1 fw-bold mb-3">--theme-surface-500</p>
+              <p class="subtitle-1 mb-1">- Body</p>
+              <p class="subtitle-1 mb-1">- Navbar</p>
+              <p class="subtitle-1 mb-1">- Form control</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 </template>

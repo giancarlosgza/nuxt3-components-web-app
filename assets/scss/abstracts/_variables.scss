@@ -1,8 +1,9 @@
-// LIGHT MODE VARIABLES
+// LIGHT MODE PRIMARIES VARIABLES
 $primary: #121212;
 $secondary: #f9ff01;
 $accent: #c7e7fe;
 
+// LIGHT THEME GENERATOR
 $primary-100: scale-color($primary, $lightness: 80%) !default;
 $primary-200: scale-color($primary, $lightness: 60%) !default;
 $primary-300: scale-color($primary, $lightness: 40%) !default;
@@ -57,11 +58,12 @@ $accents: (
         "accent-900": $accent-900
 ) !default;
 
-// DARK MODE VARIABLES
+// DARK MODE PRIMARIES VARIABLES
 $dark-primary: #f5f5f5;
 $dark-secondary: #ffc627;
 $dark-accent: #edffff;
 
+// DARK THEME GENERATOR
 $dark-primary-100: scale-color($dark-primary, $lightness: -80%) !default;
 $dark-primary-200: scale-color($dark-primary, $lightness: -60%) !default;
 $dark-primary-300: scale-color($dark-primary, $lightness: -40%) !default;
@@ -114,6 +116,24 @@ $dark-accents: (
         "accent-100": $dark-accent-100,
         "accent": $dark-accent-500,
         "accent-900": $dark-accent-900
+) !default;
+
+// DARK MODE SURFACE VARIABLES
+$dark-surface: #121212;
+
+// SURFACE THEME GENERATOR
+$dark-surface-100: scale-color($dark-surface, $lightness: 20%) !default;
+$dark-surface-200: scale-color($dark-surface, $lightness: 15%) !default;
+$dark-surface-300: scale-color($dark-surface, $lightness: 10%) !default;
+$dark-surface-400: scale-color($dark-surface, $lightness: 5%) !default;
+$dark-surface-500: $dark-surface !default;
+
+$dark-surfaces: (
+        "surface-100": $dark-surface-100,
+        "surface-200": $dark-surface-200,
+        "surface-300": $dark-surface-300,
+        "surface-400": $dark-surface-400,
+        "surface-500": $dark-surface-500,
 ) !default;
 
 // CSS VARIABLES PREFIX
