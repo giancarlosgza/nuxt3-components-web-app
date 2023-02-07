@@ -28,6 +28,10 @@ html {
   border: 4px solid var(--theme-success) !important;
 }
 
+.border-danger {
+  border: 4px solid var(--theme-danger) !important;
+}
+
 .border-info {
   border: 4px solid map-get($theme-colors, color-blue) !important;
 }
@@ -38,6 +42,11 @@ html {
 
 .bg-chat {
   background-color: var(--theme-primary-700) !important;
+}
+
+.bg-frosted {
+  background-color: var(--frosted-glass-bg) !important;
+  backdrop-filter: var(--frosted-glass-backdrop-filter) !important;
 }
 
 /* ---------------------------------------------------

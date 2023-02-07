@@ -1,23 +1,30 @@
 <template>
   <div>
     <!-- SECTION HEADER -->
-    <section class="section section-hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="overline">Nuxt 3 - C4</p>
-            <h1>Components</h1>
+    <section class="section section-hero sc-gradient"></section>
+
+    <!-- CARD HEADER TITLE -->
+    <div class="container container-overflow">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <p class="overline">C4 - MTY</p>
+              <h1>Components</h1>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- COMPONENTS LIST -->
-    <div class="container mt-3">
+    <div class="container mt-5">
       <div class="row mb-3">
-        <div class="col-md-12 mb-3">
-          <h2>Components</h2>
+        <div class="col-md-12">
+          <h2 class="fw-bold">UI elements</h2>
         </div>
+      </div>
+      <div class="row mb-3">
         <!-- V FOR LIST -->
         <div v-for="(element, index) in uiElements"
              :key="`element-${index}`"
@@ -29,9 +36,9 @@
             </div>
           </NuxtLink>
         </div>
-
       </div>
     </div>
+
   </div>
 </template>
 

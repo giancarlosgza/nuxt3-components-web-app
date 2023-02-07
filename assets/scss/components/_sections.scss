@@ -16,12 +16,26 @@
     background-size: cover;
     border-bottom: 5px solid var(--theme-primary);
 
+    &.sc-gradient {
+      padding: calc($space-3 * 1.5) 0;
+      background: linear-gradient(135deg, $primary-500, $dark-secondary-400);
+      border: none;
+    }
+
     &.bg-custom {
       background-color: map-get($theme-colors, color-amber);
     }
 
     &.sc-sm {
       padding: calc(#{$space-1} * 5) 0 $space-3 0;
+    }
+
+    & ~ .container-overflow {
+      .card {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: -4rem;
+      }
     }
   }
 
