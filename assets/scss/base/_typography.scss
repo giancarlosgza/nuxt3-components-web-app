@@ -166,7 +166,7 @@ small {
 }
 
 .text-warning {
-  @include m.text-color(var(--theme-warning-contrast));
+  @include m.text-color(var(--theme-warning));
 }
 
 .text-danger {
@@ -174,7 +174,7 @@ small {
 }
 
 .text-invalid {
-  @include m.text-color(var(--theme-danger-contrast));
+  @include m.text-color(var(--theme-danger-100));
   margin-top: 0.25rem;
   margin-bottom: 0;
 }

@@ -129,6 +129,20 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="title">Info</h2>
+            </div>
+            <div class="card-body">
+              <div class="badge badge-info">Info badge</div>
+              <div class="badge badge-info">
+                <i class="material-icons-outlined me-2">&#xe872;</i>
+                <span>Info icon badge</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -17,19 +17,19 @@
 
   &.alert-success {
     background-color: rgba(var(--theme-success-rgba), 10%);
-    color: var(--theme-success-contrast);
+    color: var(--theme-success-100);
     border: 1px solid rgba(var(--theme-success-rgba), 10%);
   }
 
   &.alert-warning {
     background-color: rgba(var(--theme-warning-rgba), 10%);
-    color: var(--theme-warning-contrast);
+    color: var(--theme-warning-100);
     border: 1px solid rgba(var(--theme-warning-rgba), 10%);
   }
 
   &.alert-danger {
     background-color: rgba(var(--theme-danger-rgba), 10%);
-    color: var(--theme-danger-contrast);
+    color: var(--theme-danger-100);
     border: 1px solid rgba(var(--theme-danger-rgba), 10%);
   }
 

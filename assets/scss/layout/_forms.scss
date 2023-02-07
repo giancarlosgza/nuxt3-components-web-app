@@ -47,10 +47,10 @@
   }
 
   &.is-invalid {
-    border-color: var(--theme-danger-contrast);
+    border-color: var(--theme-danger-100);
 
     + .invalid-feedback {
-      color: var(--theme-danger-contrast);
+      color: var(--theme-danger-100);
     }
   }
 }
@@ -235,10 +235,10 @@
   &.input-file-dropbox-success {
     border: 1px solid transparent;
     background-color: rgba(var(--theme-success-rgba), 10%);
-    color: var(--theme-success-contrast);
+    color: var(--theme-success-100);
 
     p, i {
-      color: var(--theme-success-contrast) !important;
+      color: var(--theme-success-100) !important;
     }
   }
 

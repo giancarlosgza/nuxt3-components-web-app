@@ -7,17 +7,10 @@
   @each $color, $value in $primary-colors {
     --#{$variable-prefix}#{$color}: #{hexToRGB($value)};
   }
-  // Variants colors
-  --theme-muted: #52595f;
-  --theme-muted-100: #52595f;
-  --theme-success: #008838;
-  --theme-success-contrast: #005c26;
-  --theme-warning: #ffab00;
-  --theme-warning-contrast: #834300;
-  --theme-danger: #de2839;
-  --theme-danger-contrast: #a10300;
-  --theme-danger-800: #d12033;
-  --theme-danger-900: #c20d26;
+  // Status colors
+  @each $color, $value in $light-status-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
   --theme-default: #f5f8fa;
   --theme-default-active: #dadce0;
   --theme-disabled: #e9ecef;
@@ -56,17 +49,10 @@
   --theme-background: var(--theme-surface-500);
   --theme-on-primary: #ffffff;
   --theme-on-primary-inverse: #000000;
-  // Variants colors
-  --theme-muted: #acb4ba;
-  --theme-muted-100: #b8c1c7;
-  --theme-success: #8fdf9e;
-  --theme-success-contrast: #00cc54;
-  --theme-warning: #fef697;
-  --theme-warning-contrast: #ffa649;
-  --theme-danger: #fbcad2;
-  --theme-danger-contrast: #ff8f8d;
-  --theme-danger-800: #f49ba1;
-  --theme-danger-900: #ec737c;
+  // Status colors
+  @each $color, $value in $dark-status-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
   --theme-default: #272727;
   --theme-default-active: #323232;
   --theme-disabled: #939393;

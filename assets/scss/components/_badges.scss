@@ -18,32 +18,32 @@
 
   &.badge-success {
     background-color: rgba(var(--theme-success-rgba), 10%);
-    color: var(--theme-success-contrast);
+    color: var(--theme-success-100);
   }
 
   &.badge-info {
     background-color: rgba(var(--theme-info-rgba), 10%);
-    color: var(--theme-accent-500);
+    color: var(--theme-accent-900);
   }
 
   &.badge-warning {
     background-color: rgba(var(--theme-warning-rgba), 10%);
-    color: var(--theme-warning-contrast);
+    color: var(--theme-warning-100);
   }
 
   &.badge-danger {
     background-color: rgba(var(--theme-danger-rgba), 10%);
-    color: var(--theme-danger-contrast);
+    color: var(--theme-danger-100);
   }
 
   &.badge-default {
     background-color: var(--theme-default);
-    color: var(--theme-muted);
+    color: var(--theme-muted-100);
   }
 
   &.badge-default-outline {
     background-color: transparent;
-    color: var(--theme-muted);
+    color: var(--theme-muted-100);
     border: 1px solid var(--theme-default-active);
 
     .is-result {

@@ -69,6 +69,10 @@ const uiElements = [
     route: 'forms'
   },
   {
+    name: 'Icons & Texts',
+    route: 'icons'
+  },
+  {
     name: 'Images',
     route: 'images'
   },

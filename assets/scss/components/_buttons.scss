@@ -75,18 +75,18 @@
   }
 
   &.btn-danger {
-    background-color: var(--theme-danger-contrast);
+    background-color: var(--theme-danger-100);
     color: var(--theme-on-primary-inverse);
     border: none !important;
 
     &:hover {
-      background-color: var(--theme-danger-800);
+      background-color: var(--theme-danger);
       color: var(--theme-on-primary-inverse);
     }
 
     &:focus,
     &:active {
-      background-color: var(--theme-danger-900) !important;
+      background-color: var(--theme-danger) !important;
       color: var(--theme-on-primary-inverse) !important;
     }
   }
@@ -164,13 +164,13 @@
       color: var(--theme-danger) !important;
 
       &:hover {
-        color: var(--theme-danger-contrast);
+        color: var(--theme-danger-100);
         background-color: rgba(var(--theme-danger-rgba), 10%) !important;
       }
 
       &:active,
       &:focus {
-        color: var(--theme-danger-contrast);
+        color: var(--theme-danger-100);
         background-color: rgba(var(--theme-danger-rgba), 20%) !important;
       }
     }

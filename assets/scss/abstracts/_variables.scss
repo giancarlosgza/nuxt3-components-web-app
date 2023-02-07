@@ -1,7 +1,14 @@
-// LIGHT MODE PRIMARIES VARIABLES
+// LIGHT THEME PRIMARIES VARIABLES
 $primary: #121212;
 $secondary: #f9ff01;
 $accent: #c7e7fe;
+
+// STATUS THEME VARIABLES
+$success: #00c853;
+$muted: #52595f;
+$warning: #ffab00;
+$info: #0000be;
+$danger: #de2839;
 
 // LIGHT THEME GENERATOR
 $primary-100: scale-color($primary, $lightness: 80%) !default;
@@ -58,7 +65,7 @@ $accents: (
         "accent-900": $accent-900
 ) !default;
 
-// LIGHT MODE SURFACE VARIABLES
+// LIGHT THEME SURFACE VARIABLES
 $light-surface: #ffffff;
 
 // SURFACE THEME GENERATOR
@@ -78,7 +85,32 @@ $light-surfaces: (
         "surface-outline": $light-surface-outline,
 ) !default;
 
-// DARK MODE PRIMARIES VARIABLES
+// LIGHT THEME STATUS VARIABLES
+$light-success-100: scale-color($success, $lightness: -60%);
+$light-success: scale-color($success, $lightness: -20%);
+$light-muted-100: scale-color($muted, $lightness: -60%);
+$light-muted: scale-color($muted, $lightness: 0%);
+$light-warning-100: scale-color($warning, $lightness: -60%);
+$light-warning: scale-color($warning, $lightness: -20%);
+$light-info-100: scale-color($info, $lightness: -60%);
+$light-info: scale-color($info, $lightness: -20%);
+$light-danger-100: scale-color($danger, $lightness: -60%);
+$light-danger: scale-color($danger, $lightness: -20%);
+
+$light-status-colors: (
+        'success-100': $light-success-100,
+        'success': $light-success,
+        'muted-100': $light-muted-100,
+        'muted': $light-muted,
+        'warning-100': $light-warning-100,
+        'warning': $light-warning,
+        'info-100': $light-info-100,
+        'info': $light-info,
+        'danger-100': $light-danger-100,
+        'danger': $light-danger,
+);
+
+// DARK THEME PRIMARIES VARIABLES
 $dark-primary: #f5f5f5;
 $dark-secondary: #ffc627;
 $dark-accent: #edffff;
@@ -138,7 +170,7 @@ $dark-accents: (
         "accent-900": $dark-accent-900
 ) !default;
 
-// DARK MODE SURFACE VARIABLES
+// DARK THEME SURFACE VARIABLES
 $dark-surface: #121212;
 
 // SURFACE THEME GENERATOR
@@ -158,6 +190,31 @@ $dark-surfaces: (
         "surface-outline": $dark-surface-outline,
 ) !default;
 
+// DARK THEME STATUS VARIABLES
+$dark-success-100: scale-color($success, $lightness: 60%);
+$dark-success: scale-color($success, $lightness: 80%);
+$dark-muted-100: scale-color($muted, $lightness: 60%);
+$dark-muted: scale-color($muted, $lightness: 65%);
+$dark-warning-100: scale-color($warning, $lightness: 60%);
+$dark-warning: scale-color($warning, $lightness: 80%);
+$dark-info-100: scale-color($info, $lightness: 60%);
+$dark-info: scale-color($info, $lightness: 80%);
+$dark-danger-100: scale-color($danger, $lightness: 60%);
+$dark-danger: scale-color($danger, $lightness: 80%);
+
+$dark-status-colors: (
+        'success-100': $dark-success-100,
+        'success': $dark-success,
+        'muted-100': $dark-muted-100,
+        'muted': $dark-muted,
+        'warning-100': $dark-warning-100,
+        'warning': $dark-warning,
+        'info-100': $dark-info-100,
+        'info': $dark-info,
+        'danger-100': $dark-danger-100,
+        'danger': $dark-danger,
+);
+
 // CSS VARIABLES PREFIX
 $variable-prefix: theme- !default;
 
@@ -166,13 +223,7 @@ $black: #000000;
 $white: #ffffff;
 $grey: #757575;
 $dark: #212121;
-
 $default: #f5f8fa;
-$muted: #52595f;
-$success: #00c853;
-$warning: #ffab00;
-$info: #0000be;
-$danger: #de2839;
 
 $primary-colors: (
         'primary-rgba': $primary,

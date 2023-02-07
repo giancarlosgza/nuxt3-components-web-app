@@ -18,7 +18,7 @@ i.material-icons-outlined {
   padding: 20px;
   background-color: var(--theme-background);
   color: var(--theme-primary-contrast);
-  border-radius: $border-radius-50;
+  border-radius: $border-radius-12;
   box-shadow: $shadow-sm;
 
   svg path {
@@ -46,19 +46,19 @@ i.material-icons-outlined {
 
   &.icon-wrap-success {
     background-color: rgba(var(--theme-success-rgba), 10%);
-    color: var(--theme-success);
+    color: var(--theme-success-100);
     box-shadow: $shadow-0dp;
   }
 
   &.icon-wrap-default {
-    background-color: rgba(var(--theme-default-rgba), 20%);
+    background-color: rgba(var(--theme-default-rgba), 50%);
     color: var(--theme-on-primary);
     box-shadow: $shadow-0dp;
   }
 
   &.icon-wrap-info {
     background-color: rgba(var(--theme-accent-rgba), 30%);
-    color: var(--theme-accent-500);
+    color: var(--theme-accent-900);
     box-shadow: $shadow-0dp;
   }
 
