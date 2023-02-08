@@ -69,12 +69,21 @@ $modal-fade-transform: scale(.8);
 .offcanvas {
   background-color: var(--theme-surface-100);
 
+  .offcanvas-header {
+    .offcanvas-title {
+      font-weight: $fw-700;
+      @extend .subtitle-1;
+      margin-bottom: 0;
+    }
+  }
+
   .offcanvas-body {
     text-align: left;
+    color: var(--theme-on-primary);
   }
 
   &.offcanvas-end {
-    border-radius: $border-radius-6 $border-radius-0 $border-radius-0 $border-radius-6;
+    border-radius: $border-radius-8 $border-radius-0 $border-radius-0 $border-radius-8;
   }
 
   &.offcanvas-bottom {

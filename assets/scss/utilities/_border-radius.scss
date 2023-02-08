@@ -1,0 +1,7 @@
+$border-radius-list: 0, 4, 6, 8, 12, 25, 50;
+
+@each $border in $border-radius-list {
+  .border-radius-#{$border} {
+    border-radius: #{$border}px;
+  }
+}

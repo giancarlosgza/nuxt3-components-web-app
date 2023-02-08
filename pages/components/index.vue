@@ -88,8 +88,8 @@ const uiElements = [
     route: 'modals'
   },
   {
-    name: 'Navbars',
-    route: 'navbars'
+    name: 'Navbar',
+    route: 'navbar'
   },
   {
     name: 'Offcanvas',

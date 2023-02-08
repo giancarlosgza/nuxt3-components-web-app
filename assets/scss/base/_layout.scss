@@ -1,17 +1,15 @@
 @use "sass:math";
 
+// HTML BASE
 html {
   scroll-behavior: smooth;
 }
 
+// CONTAINER
 .container {
   &.is-nav-fixed {
     margin-top: calc(#{$space-3} * 1.8);
   }
-}
-
-.vhr-100 {
-  height: calc(100vh - 65px);
 }
 
 .analysis-topbar {
@@ -28,6 +26,10 @@ html {
   border: 4px solid var(--theme-success) !important;
 }
 
+.border-warning {
+  border: 4px solid var(--theme-warning) !important;
+}
+
 .border-danger {
   border: 4px solid var(--theme-danger) !important;
 }
@@ -36,8 +38,13 @@ html {
   border: 4px solid map-get($theme-colors, color-blue) !important;
 }
 
+// BACKGROUNDS
 .bg-primary {
-  background-color: var(--theme-primary-400) !important;
+  background-color: var(--theme-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--theme-secondary) !important;
 }
 
 .bg-chat {
@@ -49,9 +56,8 @@ html {
   backdrop-filter: var(--frosted-glass-backdrop-filter) !important;
 }
 
-/* ---------------------------------------------------
-    SHADOWS (FLAT DESIGN)
------------------------------------------------------ */
+
+// SHADOWS (FLAT DESIGN)
 .shadow-sm {
   box-shadow: $shadow-sm !important;
 }
@@ -68,17 +74,17 @@ html {
   box-shadow: $shadow-xl !important;
 }
 
-/* ---------------------------------------------------
-    SIZES
------------------------------------------------------ */
+// SIZES
 hr {
   color: var(--theme-muted);
   padding: .5px 0;
 }
 
-/* ---------------------------------------------------
-    SCROLLBAR
------------------------------------------------------ */
+.vhr-100 {
+  height: calc(100vh - 65px);
+}
+
+// SCROLLBAR
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
@@ -100,6 +106,7 @@ hr {
   border-radius: 20px;
 }
 
+// SCROLLING HORIZONTAL WRAPPER
 .scrolling-wrapper {
   overflow-x: auto;
   white-space: nowrap;
@@ -123,6 +130,7 @@ hr {
   width: 100%;
 }
 
+// CURSORS
 .cursor-pointer {
   cursor: pointer;
 }
