@@ -106,7 +106,7 @@ h6 {
   }
 
   &:has(~ h1) {
-    color: var(--theme-primary);
+    color: var(--theme-secondary-700);
     margin-bottom: .3rem;
   }
 }

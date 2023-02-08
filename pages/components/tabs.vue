@@ -1,27 +1,17 @@
 <template>
   <div>
-    <!-- HEADER -->
-    <div class="container mt-3">
-      <div class="row mb-3">
-        <div class="col-md-12 mb-3">
-          <div class="card header-hero header-sidebar">
-            <div class="card-body">
-              <p class="overline">Components</p>
-              <h1>Tabs</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <TheHeader back-route="/components"
+               category="Components"
+               title="Tabs"/>
 
     <!-- CONTENT -->
-    <div class="container mt-3">
+    <div class="container">
       <div class="row mb-3">
         <div class="col-md-12 mb-3">
+          <h2>Type</h2>
+        </div>
+        <div class="col-md-12 mb-3">
           <div class="card">
-            <div class="card-header">
-              <h2 class="title">Tabs</h2>
-            </div>
             <div class="card-body">
               <ul class="nav nav-tabs">
                 <li class="nav-item">

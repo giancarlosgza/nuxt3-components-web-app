@@ -1,27 +1,17 @@
 <template>
   <div>
-    <!-- HEADER -->
-    <div class="container mt-3">
-      <div class="row mb-3">
-        <div class="col-md-12 mb-3">
-          <div class="card header-hero header-cards">
-            <div class="card-body">
-              <p class="overline">Components</p>
-              <h1>Tables</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <TheHeader back-route="/components"
+               category="Components"
+               title="Tables"/>
 
     <!-- CONTENT -->
-    <div class="container mt-3">
+    <div class="container">
       <div class="row mb-3">
         <div class="col-md-12 mb-3">
+          <h2>Borderless</h2>
+        </div>
+        <div class="col-md-12 mb-3">
           <div class="card">
-            <div class="card-header">
-              <h2 class="title">Table borderless</h2>
-            </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-hover table-borderless">
@@ -73,11 +63,14 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-12 mb-3">
+          <h2>Striped</h2>
+        </div>
         <div class="col-md-12 mb-3">
           <div class="card">
-            <div class="card-header">
-              <h2 class="title">Table striped</h2>
-            </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-hover table-striped">

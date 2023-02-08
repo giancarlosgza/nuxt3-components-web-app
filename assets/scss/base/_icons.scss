@@ -52,7 +52,7 @@ i.material-icons-outlined {
 
   &.icon-wrap-default {
     background-color: rgba(var(--theme-default-rgba), 50%);
-    color: var(--theme-on-primary);
+    color: $black;
     box-shadow: $shadow-0dp;
   }
 

@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "../abstracts/mixins" as m;
 
 .card {
   background-color: var(--theme-surface-300);
@@ -110,8 +111,7 @@
     }
 
     &:is(.header-sidebar) {
-      background-color: #36a9e2;
-      background-image: radial-gradient(at 76% 12%, hsl(155, 94%, 35%) 0px, transparent 50%), radial-gradient(at 27% 95%, hsl(19, 97%, 76%) 0px, transparent 50%), radial-gradient(at 82% 87%, hsl(133, 97%, 62%) 0px, transparent 50%), radial-gradient(at 71% 14%, hsl(219, 77%, 48%) 0px, transparent 50%), radial-gradient(at 75% 99%, hsl(27, 91%, 59%) 0px, transparent 50%), radial-gradient(at 18% 55%, hsl(88, 73%, 37%) 0px, transparent 50%);
+      @include m.bg-gradient(135deg, $secondary-600, $secondary-800);
     }
 
     &:is(.header-buttons) {

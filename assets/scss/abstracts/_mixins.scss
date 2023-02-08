@@ -15,6 +15,15 @@
   background-image: linear-gradient($deg, $colors);
 }
 
+@mixin bg-gradient($deg, $colors...) {
+  $deg: 45deg !default;
+
+  background: -webkit-linear-gradient($deg, $colors);
+  background: linear-gradient($deg, $colors);
+  //background: -moz-linear-gradient($deg, $colors);
+  //background: -o-linear-gradient($deg, $colors);
+}
+
 /// Helper to styles a button
 /// @author C4 DEV
 @mixin btn-body() {

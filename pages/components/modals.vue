@@ -1,21 +1,11 @@
 <template>
   <div>
-    <!-- HEADER -->
-    <div class="container mt-3">
-      <div class="row mb-3">
-        <div class="col-md-12 mb-3">
-          <div class="card header-hero header-cards">
-            <div class="card-body">
-              <p class="overline">Components</p>
-              <h1>Modals</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <TheHeader back-route="/components"
+               category="Components"
+               title="Modals"/>
 
     <!-- CONTENT -->
-    <div class="container mt-3">
+    <div class="container">
       <div class="row mb-3">
         <div class="col-md-4 mb-3">
           <div class="card">
