@@ -10,7 +10,7 @@
           <div class="card">
             <div class="card-body">
               <p class="overline">Nuxt 3 - Project</p>
-              <h1>C4 - MTY</h1>
+              <h1>C4 - <span class="text-gradient secondary">MTY</span></h1>
             </div>
           </div>
         </div>

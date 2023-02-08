@@ -69,6 +69,7 @@
 
   .navbar-nav .nav-link {
     color: var(--theme-on-primary);
+    border-radius: $border-radius-4;
     border-bottom: 3px solid transparent;
 
     &.nuxt-link-exact-active {
@@ -81,13 +82,24 @@
     &.router-link-active {
       font-weight: 500;
       color: var(--theme-primary-700);
-      border-radius: $border-radius-0;
-      border-bottom: 3px solid var(--theme-primary-700);
+      background: rgba(var(--theme-primary-rgba), 20%);
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: var(--theme-primary-700);
+        border-radius: $border-radius-4;
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+      }
     }
 
     &:hover {
       color: var(--theme-muted);
-      border-bottom: 3px solid rgba(var(--theme-muted-rgba), 50%);
+      background: rgba(var(--theme-primary-rgba), 20%);
     }
   }
 

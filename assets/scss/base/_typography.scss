@@ -196,6 +196,14 @@ small {
   -webkit-text-fill-color: transparent;
   @include m.text-gradient(45deg, #7319fa, #ff33b4, #ff7e29);
 
+  &.primary {
+    @include m.text-gradient(45deg, $primary-600, $primary-800)
+  }
+
+  &.secondary {
+    @include m.text-gradient(45deg, $secondary-600, $secondary-800)
+  }
+
   &.orange {
     @include m.text-gradient(45deg, #ffba52, #ff7366);
   }
