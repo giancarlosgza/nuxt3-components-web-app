@@ -28,7 +28,7 @@
         <!-- V FOR LIST -->
         <div v-for="(element, index) in uiElements"
              :key="`element-${index}`"
-             class="col-md-3 mb-3">
+             class="col-6 col-md-3 mb-3">
           <NuxtLink :to="`components/${element.route}`"
                     class="card card-no-border is-interactive">
             <div class="card-body">

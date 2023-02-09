@@ -10,6 +10,7 @@
           </NuxtLink>
           <p class="overline">{{ category }}</p>
           <h1>{{ title }}</h1>
+          <div class="hl-gradient"></div>
         </div>
       </div>
     </div>
