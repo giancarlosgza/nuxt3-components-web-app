@@ -324,4 +324,11 @@
     }
   }
 
+  &.is-vehicle-search {
+    top: 38.5rem;
+    height: 10rem;
+    .floating-card-body {
+      overflow-y: visible;
+    }
+  }
 }

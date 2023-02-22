@@ -18,10 +18,12 @@
   opacity: 0;
   visibility: hidden;
 
-  &.popup-show {
-    transform: translateX(0);
-    opacity: 10;
-    visibility: visible;
+  p {
+    font-size: 12px;
+    color: var(--theme-on-primary);
+    margin-bottom: 5px;
+    font-weight: $fw-800;
+    font-family: $font-jakarta-sans;
   }
 
   .popup-body {
@@ -39,35 +41,86 @@
     }
   }
 
-  p {
-    font-size: 12px !important;
-    color: var(--theme-on-primary);
-    margin-bottom: 5px !important;
-    font-weight: 700;
-    font-family: $font-jakarta-sans;
+  &.is-show {
+    transform: translateX(0);
+    opacity: 10;
+    visibility: visible;
+  }
+
+  &.is-info {
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: translateX(-3rem);
+
+    p {
+      font-weight: $fw-800 !important;
+      font-size: 12px !important;
+      margin-bottom: 3px !important;
+
+      &:not(&:first-child) {
+        font-weight: $fw-600 !important;
+        color: var(--theme-muted);
+      }
+    }
+
+    &.is-show {
+      transform: translateX(0);
+      opacity: 10;
+      visibility: visible;
+    }
   }
 }
 
-.popup-title {
-  font-size: calc(#{$space-1} + 4px);
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  font-weight: 700;
-}
+.map-popup {
+  color: var(--theme-on-primary);
 
-.popup-text {
-  font-size: 13px;
-  color: var(--theme-muted);
-  margin-bottom: .5rem;
-}
+  .popup-title {
+    font-size: calc(#{$space-1} + 4px);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: $fw-800;
+    font-family: $font-jakarta-sans;
+  }
 
-.popup-status {
-  font-size: calc(#{$space-1} - 2px);
-  margin-bottom: 0;
-  padding: math.div($space-1, 2);
-  border-radius: $border-radius-6;
-  background-color: rgba(var(--theme-primary-rgba), 10%);
-  color: var(--theme-primary);
+  .popup-text {
+    font-size: 13px;
+    font-family: $font-dm-sans;
+    color: var(--theme-muted);
+    margin-bottom: .5rem;
+  }
+
+  .popup-status {
+    font-size: calc(#{$space-1} - 2px);
+    margin-bottom: 0;
+    padding: math.div($space-1, 2);
+    border-radius: $border-radius-6;
+    background-color: rgba(var(--theme-primary-rgba), 10%);
+    color: var(--theme-primary);
+  }
+
+  .camera-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 257.29px;
+
+    i {
+      padding: .1rem;
+      margin-bottom: .5rem;
+      cursor: pointer;
+      border-radius: $border-radius-4;
+
+      &:is(.text-success.is-active) {
+        background-color: rgba(var(--theme-success-rgba), 30%);
+      }
+
+      &:is(.text-danger.is-active) {
+        background-color: rgba(var(--theme-danger-rgba), 30%);
+      }
+    }
+  }
+
 }
 
 // BS TOOLTIPS
@@ -152,3 +205,34 @@
   }
 }
 
+// MAPBOX POPUPS
+.mapboxgl-popup {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  z-index: 99;
+
+  .mapboxgl-popup-content {
+    background-color: var(--theme-surface-500);
+    border-radius: $border-radius-8;
+    box-shadow: $shadow-lg;
+    font-family: $font-jakarta-sans;
+    width: fit-content;
+
+    .mapboxgl-popup-close-button {
+      color: var(--theme-on-primary);
+      font-size: 16px;
+    }
+
+    .popup-lg {
+      width: 500px;
+      max-width: 500px;
+      min-width: 500px;
+    }
+  }
+
+  .mapboxgl-popup-tip {
+    border-top-color: var(--theme-surface-500) !important;
+  }
+
+}

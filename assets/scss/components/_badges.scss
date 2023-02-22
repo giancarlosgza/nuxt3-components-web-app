@@ -6,6 +6,32 @@
   font-size: 12px;
   font-weight: $fw-500;
 
+  &.badge-sm {
+    font-size: 10px;
+    padding: 5px 10px;
+    margin: 0 4px;
+
+    &.badge-success {
+      &:before {
+        font-family: "Material Icons Outlined", sans-serif;
+        content: 'check';
+        font-size: 12px;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
+    }
+
+    &.badge-danger {
+      &:before {
+        font-family: "Material Icons Outlined", sans-serif;
+        content: 'report';
+        font-size: 12px;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
+    }
+  }
+
   &.badge-primary {
     background-color: rgba(var(--theme-primary-rgba), 10%);
     color: var(--theme-primary-800);
@@ -70,5 +96,14 @@
 
   &.badge-square {
     border-radius: $border-radius-6;
+  }
+
+  &.badge-absolute {
+    position: absolute;
+    top: .5rem;
+    left: 5rem;
+    padding: 5px 10px;
+    margin: 0 4px;
+    border-radius: $border-radius-25;
   }
 }

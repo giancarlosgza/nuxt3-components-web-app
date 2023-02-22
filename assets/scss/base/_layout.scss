@@ -23,6 +23,10 @@ html {
 }
 
 // BORDERS
+.border-default {
+  border: 1px solid var(--theme-surface-outline) !important;
+}
+
 .border-success {
   border: 4px solid var(--theme-success) !important;
 }
