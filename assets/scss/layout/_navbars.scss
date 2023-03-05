@@ -72,17 +72,10 @@
     border-radius: $border-radius-4;
     border-bottom: 3px solid transparent;
 
-    &.nuxt-link-exact-active {
-      font-weight: 500;
+    &.router-link-active, &.nuxt-link-exact-active {
+      font-weight: $fw-700;
       color: var(--theme-primary-700);
-      border-radius: $border-radius-0;
-      border-bottom: 3px solid var(--theme-primary-700);
-    }
-
-    &.router-link-active {
-      font-weight: 500;
-      color: var(--theme-primary-700);
-      background: rgba(var(--theme-primary-rgba), 20%);
+      background: rgba(var(--theme-secondary-rgba), 20%);
       position: relative;
 
       &:after {
