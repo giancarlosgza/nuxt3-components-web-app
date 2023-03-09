@@ -3,7 +3,7 @@
     <div class="container">
       <NuxtLink to="/"
                 class="navbar-brand">
-        <span class="text-gradient secondary">C4</span> - Nuxt 3
+        <span class="text-secondary">C4</span> - Nuxt 3
       </NuxtLink>
       <button class="navbar-toggler btn btn-link mx-0 "
               type="button"
@@ -43,25 +43,32 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                Username
+            <div class='dropdown'>
+              <button
+                  id='themeDropdown'
+                  class='nav-link btn btn-link ripple ripple-primary'
+                  type='button'
+                  data-bs-toggle='dropdown'
+                  aria-expanded='false'>
+                <i class='material-icons-outlined'
+                   data-bs-toggle='tooltip'
+                   data-bs-placement='bottom'
+                   title='Tema del sistema'>&#xe0f0;</i>
               </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <button class="dropdown-item">Action</button>
-                </li>
-                <li>
-                  <button class="dropdown-item">Another action</button>
-                </li>
-                <li>
-                  <button class="dropdown-item">Something else here</button>
-                </li>
-              </ul>
+              <IncludeColorModePicker/>
             </div>
+          </li>
+          <li class="nav-item navigation-menu">
+            <button class="nav-link btn btn-link">
+              <i class="material-icons-outlined">&#xe5c3;</i>
+            </button>
+            <NavigationApps/>
+          </li>
+          <li class="nav-item navigation-menu">
+            <button class="nav-link btn btn-link">
+              <i class="material-icons-outlined">&#xe853;</i>
+            </button>
+            <NavigationUser/>
           </li>
         </ul>
       </div>
