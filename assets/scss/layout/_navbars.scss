@@ -118,7 +118,7 @@
   //max-width: 10rem;
   border-radius: $border-radius-12;
   box-shadow: $shadow-xl;
-  transition: $transition-ease-in-out;
+  transition: $transition-cubic-bezier;
 
   .nav-menu-content {
     padding: $space-1;
