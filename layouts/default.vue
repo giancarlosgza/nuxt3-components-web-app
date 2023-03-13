@@ -1,7 +1,12 @@
 <template>
   <div>
-    <TheNavbar/>
-    <slot/>
+    <TheSidebar/>
+    <main>
+      <div class="content">
+        <TheNavbar/>
+        <slot/>
+      </div>
+    </main>
   </div>
 </template>
 

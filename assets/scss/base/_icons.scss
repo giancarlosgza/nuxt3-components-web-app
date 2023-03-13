@@ -4,6 +4,24 @@ i.material-icons-outlined {
   display: inline-flex;
 }
 
+// MATERIAL SYMBOLS STYLES
+.material-symbols-rounded {
+  display: inline-flex;
+  vertical-align: middle;
+  transition: $transition-ease-in-out;
+  font-variation-settings: 'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-rounded-bold {
+  font-variation-settings: 'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 .icon-inverse {
   transform: rotateY(180deg);
 }

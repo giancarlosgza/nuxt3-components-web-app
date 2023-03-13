@@ -19,6 +19,42 @@
       grid-template-columns: repeat(8, 1fr);
     }
   }
+
+  .sidebar {
+    transform: translateX(-18rem);
+    width: calc(18rem / 2);
+
+    .sidebar-header {
+      .sidebar-toggle {
+        position: fixed;
+        top: .7rem;
+        left: 1rem;
+        transform: translateX(18rem);
+      }
+    }
+
+    & ~ main {
+      .content {
+        margin-left: 0;
+      }
+    }
+
+    &:has(.btn-check:checked) {
+      width: calc(18rem / 2);
+      transform: translateX(0);
+
+      .sidebar-toggle {
+        position: unset;
+        transform: unset;
+      }
+
+      & ~ main {
+        .content {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 @include m.media-query(600) {
