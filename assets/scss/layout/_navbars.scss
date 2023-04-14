@@ -132,7 +132,14 @@
     flex-direction: column;
 
     .nav-menu-header {
+      display: flex;
       margin-bottom: $space-1;
+
+      .img-fluid {
+        max-width: 60px;
+        border-radius: $border-radius-50;
+        margin-right: .5rem;
+      }
 
       p {
         &:first-child {
@@ -189,6 +196,12 @@
 
         i, img {
           margin-bottom: .3rem;
+
+          &:is(.img-fluid) {
+            min-width: 50px;
+            max-width: 50px;
+            border-radius: $border-radius-8;
+          }
         }
 
         &:hover {
@@ -205,6 +218,11 @@
     .nav-menu-footer {
       display: grid;
       margin-top: $space-1;
+      text-align: center;
+
+      .img-fluid {
+        max-width: 70px;
+      }
 
       .btn {
         margin: 0;
