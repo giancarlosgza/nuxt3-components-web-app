@@ -113,7 +113,7 @@
   right: 0;
   background-color: var(--theme-surface-100);
   color: var(--theme-on-primary);
-  min-width: calc(#{$space-3} + 12rem);
+  min-width: calc(#{$space-3} + 18rem);
   width: fit-content;
   //max-width: 10rem;
   border-radius: $border-radius-12;
@@ -179,6 +179,7 @@
       .nav-menu-item {
         padding: .5rem;
         border: 1px solid var(--theme-surface-outline);
+        background: var(--theme-surface-200);
         border-radius: $border-radius-6;
         min-width: 7.5rem;
         max-width: 7.5rem;
@@ -206,7 +207,7 @@
 
         &:hover {
           border: 1px solid var(--theme-secondary);
-          background-color: var(--theme-surface-300);
+          background-color: var(--theme-surface-400);
 
           p {
             font-weight: $fw-800;
