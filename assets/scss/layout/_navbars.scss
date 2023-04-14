@@ -54,9 +54,9 @@
 
         &:hover {
           .nav-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
+            //opacity: 1;
+            //visibility: visible;
+            //transform: translateY(0);
           }
         }
       }
@@ -119,6 +119,12 @@
   border-radius: $border-radius-12;
   box-shadow: $shadow-xl;
   transition: $transition-cubic-bezier;
+
+  &.nav-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
   .nav-menu-content {
     padding: $space-1;
