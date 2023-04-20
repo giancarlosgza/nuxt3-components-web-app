@@ -3,8 +3,10 @@
         <div :class="['nav-menu', isNavUserActive ? 'nav-active' : '']">
             <div class="nav-menu-content">
                 <div class="nav-menu-header">
-                    <p>Root Developer</p>
-                    <p>root@c4mty.org</p>
+                    <div>
+                        <p>Root Developer</p>
+                        <p>root@c4mty.org</p>
+                    </div>
                 </div>
                 <div class="nav-menu-body">
                     <div class="nav-menu-item menu-account">

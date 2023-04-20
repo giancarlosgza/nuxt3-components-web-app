@@ -3,8 +3,10 @@
         <div :class="['nav-menu', isNavAppsActive ? 'nav-active' : '']">
             <div class="nav-menu-content">
                 <div class="nav-menu-header">
-                    <p>LookAI</p>
-                    <p>Apps</p>
+                    <div>
+                        <p>LookAI</p>
+                        <p>Apps</p>
+                    </div>
                 </div>
                 <div class="nav-menu-body">
                     <div class="nav-menu-item">
