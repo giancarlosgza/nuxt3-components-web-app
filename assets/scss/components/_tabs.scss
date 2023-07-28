@@ -26,3 +26,97 @@
     }
   }
 }
+
+.nav-pill-controls {
+  --radius: #{$border-radius-50};
+  --transition: cubic-bezier(0.39, 0.58, 0.57, 1);
+
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-bottom: 0;
+  gap: .75rem;
+  height: auto;
+  list-style: none;
+  border-radius: var(--radius);
+  background: var(--theme-surface-100);
+  border: 1px solid var(--theme-surface-outline);
+  padding: .5rem;
+  position: relative;
+
+  &.nav-tab {
+    --radius: #{$border-radius-25};
+
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--theme-surface-outline);
+    border-radius: calc(var(--radius) - var(--radius));
+    //padding-inline: 0;
+
+    .nav-pill-item {
+      .nav-pill-link {
+        &:is(.active) {
+          font-weight: $fw-800;
+          color: var(--theme-on-primary);
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      padding-block: 0;
+      background: var(--theme-on-primary);
+      border-radius: var(--radius);
+      top: unset;
+      width: var(--width, 100px);
+      height: 4px;
+      transition: translate 200ms var(--transition);
+    }
+  }
+
+  .nav-pill-item {
+    height: auto;
+    z-index: 2;
+
+    .nav-pill-link {
+      display: block;
+      padding-block: .5rem;
+      padding-inline: 1.5rem;
+      border-radius: var(--radius);
+      background: transparent;
+      color: var(--theme-on-primary);
+      border: 1px solid transparent;
+      min-width: 7rem;
+      text-align: center;
+      transition: background 200ms var(--transition), color 200ms var(--transition), font-weight 200ms var(--transition);
+      @extend .subtitle-1;
+
+      &:is(:hover) {
+        background: rgba(var(--theme-primary-rgba), 0.2);
+      }
+
+      &:is(.active) {
+        font-weight: $fw-800;
+        color: var(--theme-on-primary-inverse);
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    padding-block: .5rem;
+    padding-inline: 1rem;
+    background: var(--theme-on-primary);
+    border-radius: var(--radius);
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: var(--width, 100px);
+    height: 80%;
+    transition: translate 200ms var(--transition);
+    translate: var(--left, 120px) 0;
+    transform-origin: left;
+    //transition-delay: 100ms;
+  }
+}
