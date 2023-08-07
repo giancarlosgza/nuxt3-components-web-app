@@ -204,8 +204,32 @@ small {
     @include m.text-gradient(45deg, $secondary-600, $secondary-800)
   }
 
+  &.green {
+    @include m.text-gradient(45deg, $text-gradient-green);
+  }
+
+  &.yellow {
+    @include m.text-gradient(45deg, $text-gradient-yellow);
+  }
+
+  &.blue {
+    @include m.text-gradient(45deg, $text-gradient-cyan);
+  }
+
   &.orange {
-    @include m.text-gradient(45deg, #ffba52, #ff7366);
+    @include m.text-gradient(45deg, $text-gradient-orange);
+  }
+
+  &.indigo {
+    @include m.text-gradient(45deg, $text-gradient-indigo);
+  }
+
+  &.purple {
+    @include m.text-gradient(135deg, $text-gradient-purple);
+  }
+
+  &.crimson {
+    @include m.text-gradient(45deg, $text-gradient-crimson)
   }
 
   &.grey {

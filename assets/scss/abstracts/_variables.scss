@@ -263,6 +263,15 @@ $theme-colors: (
         'color-orange': #ff3d00,
 );
 
+$text-gradient: #7319fa, #ff33b4, #ff7e29 !default;
+$text-gradient-indigo: #c81bd4, #6600ff !default;
+$text-gradient-orange: #fc219f, #ff594a !default;
+$text-gradient-cyan: #0adeff, #0a81ff !default;
+$text-gradient-green: #008037, #00b34a !default;
+$text-gradient-yellow: #ff9800, #ffc107, #ffeb3b !default;
+$text-gradient-purple: #61449f, #9cb0fb, #050338 !default;
+$text-gradient-crimson: #ad1313, #d10000 !default;
+
 // Fonts
 $font-jakarta-sans: 'Plus Jakarta Sans', 'Roboto', -apple-system, 'Segoe UI', sans-serif;
 $font-dm-sans: 'DM Sans', -apple-system, 'Segoe UI', sans-serif;

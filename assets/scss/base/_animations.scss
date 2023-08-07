@@ -63,23 +63,42 @@
   }
 }
 
+@keyframes scrollScale {
+  from {
+    scale: 1.5;
+    translate: 0 15rem;
+  }
+  to {
+    scale: 1;
+    translate: 0;
+  }
+}
+
 .scroll-driven {
+  --easing-in: ease-in-out;
+
   /* Create View Timeline */
   view-timeline-name: --revealing-image;
   view-timeline-axis: block;
 
   /* Tweak range when effect should run*/
-  animation-range: entry 25% cover 50%;
+  animation-range: entry 0% cover 50% !important;
 
   &.animation-reveal {
     /* Attach animation, linked to the  View Timeline */
-    animation: linear scrollReveal both;
+    animation: scrollReveal var(--easing-in) both;
     animation-timeline: --revealing-image;
   }
 
   &.animation-fade {
     /* Attach animation, linked to the  View Timeline */
-    animation: linear scrollFade both;
+    animation: scrollFade var(--easing-in) both;
+    animation-timeline: --revealing-image;
+  }
+
+  &.animation-scale {
+    /* Attach animation, linked to the  View Timeline */
+    animation: scrollScale var(--easing-in) both;
     animation-timeline: --revealing-image;
   }
 }
