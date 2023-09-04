@@ -84,8 +84,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsNavbar"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Navbars - Components',
+  ogTitle: 'Navbars - Components - C4 MTY',
+  twitterTitle: 'Navbars - Components - C4 MTY',
+  description: 'Navbars UI components examples',
+  ogDescription: 'Navbars UI components examples',
+  twitterDescription: 'Navbars UI components examples'
+})
 </script>

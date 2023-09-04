@@ -123,8 +123,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsDropdowns"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Dropdowns - Components',
+  ogTitle: 'Dropdowns - Components - C4 MTY',
+  twitterTitle: 'Dropdowns - Components - C4 MTY',
+  description: 'Dropdowns UI components examples',
+  ogDescription: 'Dropdowns UI components examples',
+  twitterDescription: 'Dropdowns UI components examples'
+})
 </script>

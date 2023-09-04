@@ -139,8 +139,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsBadges"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Badges - Components',
+  ogTitle: 'Badges - Components - C4 MTY',
+  twitterTitle: 'Badges - Components - C4 MTY',
+  description: 'Badges UI components examples',
+  ogDescription: 'Badges UI components examples',
+  twitterDescription: 'Badges UI components examples'
+})
 </script>

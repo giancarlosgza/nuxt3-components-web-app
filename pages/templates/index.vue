@@ -26,7 +26,7 @@
       </div>
       <div class="row mb-3">
         <!-- V FOR LIST -->
-        <div v-for="(element, index) in templateExamples"
+        <div v-for="(element, index) in routesTemplates"
              :key="`element-${index}`"
              class="col-6 col-md-3 mb-3">
           <NuxtLink :to="`templates/${element.route}`"
@@ -42,18 +42,20 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "TemplatesIndex",
-  data() {
-    return {
-      templateExamples: [
-        {
-          name: 'Developer Tool Landing Page',
-          route: 'landing/developer'
-        }
-      ]
-    }
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Templates',
+  ogTitle: 'Templates - C4 MTY',
+  twitterTitle: 'Templates - C4 MTY',
+  description: 'UI templates examples',
+  ogDescription: 'UI templates examples',
+  twitterDescription: 'UI templates examples'
+})
+
+const routesTemplates = [
+  {
+    name: 'Developer Tool Landing Page',
+    route: 'landing/developer'
   }
-}
+]
 </script>

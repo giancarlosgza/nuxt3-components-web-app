@@ -42,8 +42,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsBreadcrumb"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Breadcrumbs - Components',
+  ogTitle: 'Breadcrumbs - Components - C4 MTY',
+  twitterTitle: 'Breadcrumbs - Components - C4 MTY',
+  description: 'Breadcrumbs UI components examples',
+  ogDescription: 'Breadcrumbs UI components examples',
+  twitterDescription: 'Breadcrumbs UI components examples'
+})
 </script>

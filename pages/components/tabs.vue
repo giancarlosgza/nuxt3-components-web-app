@@ -1,5 +1,16 @@
 <template>
   <div>
+    <!-- META TAGS -->
+    <Head>
+      <Title>Tabs - Components</Title>
+      <Meta name="title" content="Tabs - Component"/>
+      <Meta property="og:title" content="Tabs - Component"/>
+      <Meta name="twitter:title" content="Tabs - Component"/>
+      <Meta name="description" content="Tabs UI components examples"/>
+      <Meta property="og:description" content="Tabs UI components examples"/>
+      <Meta name="twitter:description" content="Tabs UI components examples"/>
+    </Head>
+
     <TheHeader back-route="/components"
                category="Components"
                title="Tabs"/>

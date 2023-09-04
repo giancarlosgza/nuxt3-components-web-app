@@ -62,8 +62,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsImages"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Images - Components',
+  ogTitle: 'Images - Components - C4 MTY',
+  twitterTitle: 'Images - Components - C4 MTY',
+  description: 'Images UI components examples',
+  ogDescription: 'Images UI components examples',
+  twitterDescription: 'Images UI components examples'
+})
 </script>

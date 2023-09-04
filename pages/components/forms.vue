@@ -85,8 +85,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsForms"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Forms - Components',
+  ogTitle: 'Forms - Components - C4 MTY',
+  twitterTitle: 'Forms - Components - C4 MTY',
+  description: 'Forms UI components examples',
+  ogDescription: 'Forms UI components examples',
+  twitterDescription: 'Forms UI components examples'
+})
 </script>

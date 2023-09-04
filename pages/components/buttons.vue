@@ -115,8 +115,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsButtons"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Buttons - Components',
+  ogTitle: 'Buttons - Components - C4 MTY',
+  twitterTitle: 'Buttons - Components - C4 MTY',
+  description: 'Buttons UI components examples',
+  ogDescription: 'Buttons UI components examples',
+  twitterDescription: 'Buttons UI components examples'
+})
 </script>

@@ -50,8 +50,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsIcons"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Icons - Components',
+  ogTitle: 'Icons - Components - C4 MTY',
+  twitterTitle: 'Icons - Components - C4 MTY',
+  description: 'Icons UI components examples',
+  ogDescription: 'Icons UI components examples',
+  twitterDescription: 'Icons UI components examples'
+})
 </script>

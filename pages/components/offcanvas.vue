@@ -116,8 +116,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsOffcanvas"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Offcanvas - Components',
+  ogTitle: 'Offcanvas - Components - C4 MTY',
+  twitterTitle: 'Offcanvas - Components - C4 MTY',
+  description: 'Offcanvas UI components examples',
+  ogDescription: 'Offcanvas UI components examples',
+  twitterDescription: 'Offcanvas UI components examples'
+})
 </script>

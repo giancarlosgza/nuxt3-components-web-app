@@ -128,8 +128,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsTables"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Tables - Components',
+  ogTitle: 'Tables - Components - C4 MTY',
+  twitterTitle: 'Tables - Components - C4 MTY',
+  description: 'Tables UI components examples',
+  ogDescription: 'Tables UI components examples',
+  twitterDescription: 'Tables UI components examples'
+})
 </script>

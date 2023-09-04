@@ -226,8 +226,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsCards"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Cards - Components',
+  ogTitle: 'Cards - Components - C4 MTY',
+  twitterTitle: 'Cards - Components - C4 MTY',
+  description: 'Cards UI components examples',
+  ogDescription: 'Cards UI components examples',
+  twitterDescription: 'Cards UI components examples'
+})
 </script>

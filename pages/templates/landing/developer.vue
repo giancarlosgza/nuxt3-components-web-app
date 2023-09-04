@@ -141,10 +141,13 @@
 }
 </style>
 
-<script lang="ts">
-import {defineComponent} from 'vue'
-
-export default defineComponent({
-  name: "TemplatesLandingDeveloper"
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Developer',
+  ogTitle: 'Developer - C4 MTY',
+  twitterTitle: 'Developer - C4 MTY',
+  description: 'Developer landing page with CSS Scroll Driven Animations',
+  ogDescription: 'Developer landing page with CSS Scroll Driven Animations',
+  twitterDescription: 'Developer landing page with CSS Scroll Driven Animations'
 })
 </script>

@@ -26,7 +26,7 @@
       </div>
       <div class="row mb-3">
         <!-- V FOR LIST -->
-        <div v-for="(element, index) in uiElements"
+        <div v-for="(element, index) in routesComponents"
              :key="`element-${index}`"
              class="col-6 col-md-3 mb-3">
           <NuxtLink :to="`components/${element.route}`"
@@ -43,14 +43,16 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Components',
-  meta: [
-    {name: 'description', content: 'Components list'}
-  ]
+  ogTitle: 'Components - C4 MTY',
+  twitterTitle: 'Components - C4 MTY',
+  description: 'Components examples',
+  ogDescription: 'Components examples',
+  twitterDescription: 'Components examples'
 })
 
-const uiElements = [
+const routesComponents = [
   {
     name: 'Badges',
     route: 'badges'

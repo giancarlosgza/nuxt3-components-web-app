@@ -101,8 +101,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ComponentsModals"
-}
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Modals - Components',
+  ogTitle: 'Modals - Components - C4 MTY',
+  twitterTitle: 'Modals - Components - C4 MTY',
+  description: 'Modals UI components examples',
+  ogDescription: 'Modals UI components examples',
+  twitterDescription: 'Modals UI components examples'
+})
 </script>

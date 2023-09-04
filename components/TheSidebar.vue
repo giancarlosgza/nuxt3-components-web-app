@@ -40,12 +40,22 @@
           </NuxtLink>
         </div>
       </div>
+      <div class="sidebar-footer">
+        <span class="subtitle-2">Kyber D.S. v{{ clientVersion }}</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import pkg from '../package.json'
+
 export default {
-  name: "TheSidebar"
+  name: "TheSidebar",
+  computed: {
+    clientVersion() {
+      return pkg.version
+    }
+  }
 }
 </script>
